@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "disp disp disp" "Q W E" "A S D" "Z X C";
+  border: 1px solid black;
+  text-align: center;
+  background-color: #707070;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#display {
+  grid-area: disp;
+  border: 1px solid black;
+}
+
+.drum-pad {
+  border: 1px solid black;
+}
+
+#heater-1 {grid-area: Q;}
+
+#Dsc_Oh { grid-area: W; }
+
+#Kick_n_Hat { grid-area: E; }
+
+#RP4_KICK_1 { grid-area: A; }
+
+#Cev_H2 { grid-area: S; }
+
+#Chord_1 { grid-area: D; }
+
+#Chord_2 { grid-area: Z; }
+
+#Chord_3 { grid-area: X; }
+
+#punchy_kick_1 { grid-area: C; }
